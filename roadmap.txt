@@ -1,0 +1,30 @@
+=========================================================================================================================================
+Starter				    Status				 Duration			End Data
+=========================================================================================================================================
+strater01-crud-spring		    | NOT STARTED			| 00 Days			|00/00/0000			|
+strater02-complex-hibernate         | NOT STARTED			| 00 Days			|00/00/0000			|
+strater03-spring-paginations        | NOT STARTED			| 00 Days			|00/00/0000			|
+strater04-cache-hazelcast           | NOT STARTED			| 00 Days			|00/00/0000			|
+strater05-hazelcast-cache           | NOT STARTED			| 00 Days			|00/00/0000			|
+strater06-security-basic            | NOT STARTED			| 00 Days			|00/00/0000			|
+strater07-security-jwt              | NOT STARTED			| 00 Days			|00/00/0000			|
+strater08-mq-broker                 | NOT STARTED			| 00 Days			|00/00/0000			|
+strater09-liquibase-scratch         | NOT STARTED			| 00 Days			|00/00/0000			|
+strater10-liquibase-migration       | NOT STARTED			| 00 Days			|00/00/0000			|
+strater11-bdd-tdd                   | NOT STARTED			| 00 Days			|00/00/0000			|
+strater12-admin-actualtor           | NOT STARTED			| 00 Days			|00/00/0000			|
+strater13-microservices             | NOT STARTED			| 00 Days			|00/00/0000			|
+strater14-docker                    | NOT STARTED			| 00 Days			|00/00/0000			|
+strater15-docker-compose            | NOT STARTED			| 00 Days			|00/00/0000			|
+strater16-batch-scheduling          | NOT STARTED			| 00 Days			|00/00/0000			|
+strater17-batch-testing             | NOT STARTED			| 00 Days			|00/00/0000			|
+strater18-mocking-all               | NOT STARTED			| 00 Days			|00/00/0000			|
+=========================================================================================================================================
+NOT STARTED 
+DEV PROGRES
+DEV FINISHD
+
+00/00/0000
+00 Days
+
+=========================================================================================================================================
