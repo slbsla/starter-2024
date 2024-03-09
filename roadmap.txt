@@ -1,7 +1,7 @@
 =========================================================================================================================================
 Starter				                 Status				 Duration			End Data
 =========================================================================================================================================
-starter01-crud-spring               | DEV PROGRES			| 00 Days			|00/00/0000			| DEPENDS starter19-openapi
+starter01-crud-spring               | DEV FINISHD			| 01 Days			|09/03/2024			| 
 starter02-complex-hibernate         | NOT STARTED			| 00 Days			|00/00/0000			| DEPENDS starter01-crud-spring 
 starter03-spring-paginations        | NOT STARTED			| 00 Days			|00/00/0000			|
 starter04-cache-hazelcast           | NOT STARTED			| 00 Days			|00/00/0000			|
@@ -14,12 +14,12 @@ starter10-liquibase-migration       | NOT STARTED			| 00 Days			|00/00/0000			| 
 starter11-bdd-tdd                   | NOT STARTED			| 00 Days			|00/00/0000			|
 starter12-admin-actualtor           | NOT STARTED			| 00 Days			|00/00/0000			|
 starter13-microservices             | NOT STARTED			| 00 Days			|00/00/0000			|
-starter14-docker                    | DEV FINISHD			| 00 Days			|00/00/0000			|
+starter14-docker                    | DEV FINISHD			| 01 Days			|00/00/0000			|
 starter15-docker-compose            | NOT STARTED			| 00 Days			|00/00/0000			|
 starter16-batch-scheduling          | NOT STARTED			| 00 Days			|00/00/0000			|
 starter17-batch-testing             | NOT STARTED			| 00 Days			|00/00/0000			|
 starter18-mocking-all               | NOT STARTED			| 00 Days			|00/00/0000			|
-starter19-openapi                   | DEV FINISHD			| 00 Days			|00/00/0000			|
+starter19-openapi                   | DEV FINISHD			| 02 Days			|09/03/2024			|
 =========================================================================================================================================
 NOT STARTED 
 DEV PROGRES
