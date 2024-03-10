@@ -1,0 +1,34 @@
+2024-03-10 02:36:03 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONTACT" not found (this database is empty); SQL statement:
+select * from contact [42104-214]
+2024-03-10 02:36:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONTACT" not found (this database is empty); SQL statement:
+select * from contact [42104-214]
+2024-03-10 02:42:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "[*]AUTO_SERVER=TRUE"; attendu "ALTER, ANALYZE"
+Syntax error in SQL statement "[*]AUTO_SERVER=TRUE"; expected "ALTER, ANALYZE"; SQL statement:
+AUTO_SERVER=TRUE [42001-214]
+2024-03-10 02:42:02 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "[*]AUTO_SERVER=TRUE"; attendu "ALTER, ANALYZE"
+Syntax error in SQL statement "[*]AUTO_SERVER=TRUE"; expected "ALTER, ANALYZE"; SQL statement:
+AUTO_SERVER=TRUE [42001-214]
+2024-03-10 02:47:01 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "commit[*],"
+Syntax error in SQL statement "commit[*],"; SQL statement:
+commit, [42000-214]
+2024-03-10 02:47:26 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (CONTACT: ""ID"" BIGINT NOT NULL)"
+Data conversion error converting "'' (CONTACT: ""ID"" BIGINT NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."CONTACT"("ID","LAST_NAME","NAME")VALUES(?,?,?) [22018-214]
+2024-03-10 02:47:26 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (CONTACT: ""ID"" BIGINT NOT NULL)"
+Data conversion error converting "'' (CONTACT: ""ID"" BIGINT NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."CONTACT"("ID","LAST_NAME","NAME")VALUES(?,?,?) [22018-214]
+2024-03-10 02:57:32 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (CONTACT: ""ID"" BIGINT NOT NULL)"
+Data conversion error converting "'' (CONTACT: ""ID"" BIGINT NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."CONTACT"("ID","LAST_NAME","NAME")VALUES(?,?,?) [22018-214]
+2024-03-10 02:57:32 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (CONTACT: ""ID"" BIGINT NOT NULL)"
+Data conversion error converting "'' (CONTACT: ""ID"" BIGINT NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."CONTACT"("ID","LAST_NAME","NAME")VALUES(?,?,?) [22018-214]

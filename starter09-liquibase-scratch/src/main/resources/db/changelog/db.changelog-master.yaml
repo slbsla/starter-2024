@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: classpath:db/changelog/0000_initial_schema.xml
+  - include:
+      file: classpath:db/changelog/0001_create_table_car.xml
