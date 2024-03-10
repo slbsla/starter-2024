@@ -10,7 +10,7 @@ starter06-security-basic            | NOT STARTED			| 00 Days			|00/00/0000			|
 starter07-security-jwt              | NOT STARTED			| 00 Days			|00/00/0000			|
 starter08-mq-broker                 | NOT STARTED			| 00 Days			|00/00/0000			|
 starter09-liquibase-scratch         | DEV FINISHD			| 01 Days			|00/00/0000			| 
-starter10-liquibase-migration       | NOT STARTED			| 00 Days			|00/00/0000			| DEPENDS starter09-liquibase-scratch 
+starter10-liquibase-migration       | DEV FINISHD			| 01 Days			|10/03/2024			| DEPENDS starter09-liquibase-scratch 
 starter11-bdd-tdd                   | NOT STARTED			| 00 Days			|00/00/0000			|
 starter12-admin-actualtor           | NOT STARTED			| 00 Days			|00/00/0000			|
 starter13-microservices             | NOT STARTED			| 00 Days			|00/00/0000			|
@@ -29,3 +29,14 @@ DEV FINISHD
 00 Days
 
 =========================================================================================================================================
+propositions : 
+
+* opendsl
+* paginations
+* audit
+* cicd
+* tomcat-logging
+* transaction manager
+* mockito : web & svc & db test 
+* cucumber (remove bdd tdd)
+* upload downlod files rest api
