@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      file: classpath:changelog/0000_table_user.xml
+  - include:
+      file: classpath:changelog/0001_table_user_info.xml
+  - include:
+      file: classpath:changelog/0002_table_profile.xml
+  - include:
+      file: classpath:changelog/0003_table_user_profile.xml
+  - include:
+      file: classpath:changelog/0004_table_action.xml
+  - include:
+      file: classpath:changelog/0005_screen_config.xml
