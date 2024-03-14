@@ -11,3 +11,5 @@ databaseChangeLog:
       file: classpath:changelog/0004_table_action.xml
   - include:
       file: classpath:changelog/0005_screen_config.xml
+  - include:
+      file : classpath:changelog/0006_gen_forein_key.xml

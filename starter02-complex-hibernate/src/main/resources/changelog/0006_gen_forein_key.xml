@@ -1,0 +1,46 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="samir" id="addForeignKeyConstraint1">
+        <addForeignKeyConstraint baseColumnNames="id_user"
+                                 baseTableName="s_user_info"
+                                 constraintName="fk_address_person"
+                                 referencedColumnNames="id"
+                                 referencedTableName="s_user"/>
+    </changeSet>
+
+    <changeSet author="samir" id="addForeignKeyConstraint2">
+        <addForeignKeyConstraint baseColumnNames="owner"
+                                 baseTableName="s_screen_config"
+                                 constraintName="fk_101"
+                                 referencedColumnNames="id"
+                                 referencedTableName="s_user"/>
+    </changeSet>
+
+    <changeSet author="samir" id="addForeignKeyConstraint3">
+        <addForeignKeyConstraint baseColumnNames="id_user"
+                                 baseTableName="s_user_profile"
+                                 constraintName="fk_102"
+                                 referencedColumnNames="id"
+                                 referencedTableName="s_user"/>
+    </changeSet>
+
+    <changeSet author="samir" id="addForeignKeyConstraint4">
+        <addForeignKeyConstraint baseColumnNames="id_profile"
+                                 baseTableName="s_user_profile"
+                                 constraintName="fk_103"
+                                 referencedColumnNames="id"
+                                 referencedTableName="s_profile"/>
+    </changeSet>
+
+    <changeSet author="samir" id="addForeignKeyConstraint5">
+        <addForeignKeyConstraint baseColumnNames="id_profile"
+                                 baseTableName="s_action"
+                                 constraintName="fk_104"
+                                 referencedColumnNames="id"
+                                 referencedTableName="s_profile"/>
+    </changeSet>
+
+</databaseChangeLog>

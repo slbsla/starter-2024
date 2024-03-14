@@ -9,7 +9,15 @@
                 <constraints primaryKey="true" nullable="false"/>
             </column>
 
-            <column name="color" type="varchar(255)">
+            <column name="name" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+
+            <column name="login" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+
+            <column name="password" type="varchar(255)">
                 <constraints nullable="true"/>
             </column>
 

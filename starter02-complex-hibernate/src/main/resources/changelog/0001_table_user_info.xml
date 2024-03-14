@@ -7,10 +7,13 @@
             <column name="id" type="bigint">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="password" type="varchar(255)">
+            <column name="id_user" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
                 <constraints nullable="true"/>
             </column>
-            <column name="login" type="varchar(255)">
+            <column name="lastname" type="varchar(255)">
                 <constraints nullable="true"/>
             </column>
         </createTable>
