@@ -42,3 +42,7 @@ propositions :
 * upload downlod files rest api
 * map strcut / jdbc
 * excel csv  .. reader
+* exceptions manager advice
+* projects with all configurations
+
+
