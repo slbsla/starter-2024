@@ -28,7 +28,7 @@ public class UserProfileController {
             @ApiResponse(responseCode = "403", description = "Forbidden"),
             @ApiResponse(responseCode = "404", description = "Not Found"),
             @ApiResponse(responseCode = "500", description = "Internal server error occurred")})
-    @GetMapping(value = "/all-profiles-with-details")
+    @GetMapping(value = "/all-user-with-profiles-with-details")
     public List<SUserProfile> findAll() {
         return userProfileService.findAll();
     }

@@ -5,6 +5,10 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "s_profile")
@@ -20,4 +24,8 @@ public class SProfile implements Serializable {
 
     @Column(name = "description")
     private String description;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "profile", cascade = CascadeType.ALL)
+    private List<SAction> actions = new ArrayList<>();
+
 }

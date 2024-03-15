@@ -7,9 +7,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,31 +31,14 @@ public class UserController {
         return userService.findAll();
     }
 
-}
+//    @Operation(description = "Adds User with information")
+//    @ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Success"),
+//            @ApiResponse(responseCode = "400", description = "Bad Request"),
+//            @ApiResponse(responseCode = "404", description = "Not Found"),
+//            @ApiResponse(responseCode = "500", description = "Internal server error occurred")})
+//    @PostMapping(value = "/add-user-with-info")
+//    public SUser addUser(@RequestBody SUser user ) {
+//        return userService.addUser(user);
+//    }
 
-/**
- *
- *  {
- *     "id": 1,
- *     "name": "samir",
- *     "login": "samir_01",
- *     "password": "samir_01",
- *     "suserInfo": {
- *       "id": 1,
- *       "name": "samir",
- *       "lastname": "lachiheb",
- *       "idUser": 1
- *     }
- *   },
- *   {
- *     "id": 2,
- *     "name": "ahmed",
- *     "login": "ahmed_01",
- *     "password": "ahmed_01",
- *     "suserInfo": {
- *       "id": 2,
- *       "name": "ahmed",
- *       "lastname": "ouderni",
- *       "idUser": 2
- *     }
- */
+}

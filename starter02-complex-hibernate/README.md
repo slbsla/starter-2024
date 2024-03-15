@@ -7,8 +7,7 @@ local URL : http://localhost:8080/swagger-ui/index.html
 Run Test : OK
 ALL Crud OK : Yes
 Jakarta : Yes
-Hibernata validator : 8.0.1
-
+Hibernate validator : 8.0.1
 
 # Database : ?
 
@@ -20,9 +19,11 @@ User and password : sa, null
 Saved Settings:	Generic H2 (Server)
 
 
-# Script :  ?
-
+# Script :  [data.sql]
 
 # UML: DrawIO
 
-# URL For test 
+
+# ONE TO ONE : /api/v1/users-with-informations
+# many to many :  /api/v1/all-user-with-profiles-with-details
+# one to many :  /api/v1/all-profiles-with-actions
