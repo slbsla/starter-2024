@@ -2,7 +2,7 @@
 Starter				                 Status				 Duration			End Data
 =========================================================================================================================================
 starter01-crud-spring               | DEV FINISHD			| 01 Days			|09/03/2024			| 
-starter02-complex-hibernate         | DEV PROGRES			| 03 Days			|00/00/0000			| 
+starter02-complex-hibernate         | DEV PROGRES			| 03 Days			|00/00/0000			|
 starter03-spring-paginations        | NOT STARTED			| 00 Days			|00/00/0000			|
 starter04-cache-hazelcast           | NOT STARTED			| 00 Days			|00/00/0000			|
 starter05-hazelcast-cache           | NOT STARTED			| 00 Days			|00/00/0000			|
@@ -29,7 +29,7 @@ DEV FINISHD
 00 Days
 
 =========================================================================================================================================
-propositions : 
+propositions :
 
 * opendsl
 * paginations
@@ -37,7 +37,7 @@ propositions :
 * cicd
 * tomcat-logging
 * transaction manager
-* mockito : web & svc & db test 
+* mockito : web & svc & db test
 * cucumber (remove bdd tdd)
 * upload downlod files rest api
 * map strcut / jdbc
