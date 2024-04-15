@@ -1,3 +1,4 @@
+help : https://www.baeldung.com/liquibase-refactor-schema-of-java-app
 
 Spring boot : 3.0.2
 Java : 17
@@ -5,6 +6,7 @@ Open API : 3  (3.0.0 , ui 2.0.2)
 Run Test :
 Jakarta : Yes
 Hibernate validator : 8.0.1
+Liquibase : last versions 4.26.0 (liquibase-core)
 
 url : http://localhost:8080/swagger-ui/index.html
 
