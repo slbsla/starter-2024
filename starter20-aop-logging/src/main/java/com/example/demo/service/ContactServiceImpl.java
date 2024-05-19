@@ -24,8 +24,11 @@ SOFTWARE.
 
 package com.example.demo.service;
 
+import com.example.demo.controller.ContactController;
 import com.example.demo.domain.Contact;
 import com.example.demo.repository.ContactRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -40,26 +43,44 @@ import java.util.Optional;
 @Transactional
 public class ContactServiceImpl implements ContactService {
 
+    private static final Logger logger = LoggerFactory.getLogger(ContactController.class);
+
     @Autowired
     private ContactRepository contactRepository;
 
     @Override
     public List<Contact> findAll() {
+
+        logger.info("[INFO] call to ContactServiceImpl - findAll xxxx01");
+        logger.info("[INFO] call to ContactServiceImpl - findAll xxxx02");
+        logger.info("[INFO] call to ContactServiceImpl - findAll xxxx03");
+        logger.info("[INFO] call to ContactServiceImpl - findAll xxxx04");
+        logger.info("[INFO] call to ContactServiceImpl - findAll xxxx05");
+        logger.info("[INFO] call to ContactServiceImpl - findAll xxxx06");
+        logger.info("[INFO] call to ContactServiceImpl - findAll xxxx07");
+
         return contactRepository.findAll();
     }
 
     @Override
     public Contact find(Long id) {
+
+        logger.info("[INFO] call to ContactServiceImpl - findAll"  , id);
+
         return contactRepository.getOne(id);
     }
 
     @Override
     public Contact save(Contact contact) {
+
+        logger.info("[INFO] call to ContactServiceImpl - save"  , contact.toString());
+
         return contactRepository.save(contact);
     }
 
     @Override
     public Contact update(Long id, Contact contact) {
+        logger.info("[INFO] call to ContactServiceImpl - update"  , contact.toString());
         Optional<Contact> contactToUpdate = contactRepository.findById(id);
         if (contactToUpdate.isPresent()) {
             contactToUpdate.get().setAddress(contact.getAddress());
@@ -77,8 +98,10 @@ public class ContactServiceImpl implements ContactService {
     }
 
     @Override
-    public void delete(Long contact) {
-        contactRepository.deleteById(contact);
+    public void delete(Long id) {
+        logger.info("[INFO] call to ContactServiceImpl - delete"  , id);
+
+        contactRepository.deleteById(id);
     }
 
 }

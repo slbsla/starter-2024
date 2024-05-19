@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Rolling File Appender for JSON logs -->
+    <appender name="jsonFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- Daily rollover with size-based rollover, log folder is defined here and been ovveriden by app.properties -->
+            <fileNamePattern>logs/app-log-%d{yyyy-MM-dd}.%i.json</fileNamePattern>
+            <!-- Max file size of 10MB per log file -->
+            <maxFileSize>10MB</maxFileSize>
+            <!-- Max 30 days worth of history and max 20 log files per day -->
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>3GB</totalSizeCap>
+        </rollingPolicy>
+
+<!--     DEFINE THE CLASS ENCODER IN THE CASE OF JSON-  use an encoder to allow addtional message -->
+        <encoder class="co.elastic.logging.logback.EcsEncoder">
+            <additionalField>
+                    <key>environment</key>
+                    <value>local</value>
+            </additionalField>
+            <additionalField>
+                <!-- Add additional fields here -->
+                <key>service</key>
+                <value>my-logger-app</value>
+            </additionalField>
+        </encoder>
+
+    </appender>
+
+    <!-- Define STANDARD OUTPUT PATTERN FOR CONSOLE LOG -->
+    <appender name="jsonConsole" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Log level configuration - only INFO FOR CONSOLE AND FILE-->
+    <root level="INFO">
+        <appender-ref ref="jsonConsole" />
+        <appender-ref ref="jsonFile" />
+    </root>
+
+
+    <!-- Packages for info log -->
+    <logger name="org.springframework.web" level="INFO" />
+    <logger name="com.example.demo" level="INFO" />
+
+    <!-- Packages for DEBUG log -->
+<!--    <logger name="org.springframework" level="DEBUG" />-->
+<!--    <logger name="com.example.demo" level="DEBUG" />-->
+
+</configuration>
