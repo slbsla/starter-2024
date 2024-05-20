@@ -1,0 +1,13 @@
+databaseChangeLog:
+#  - include:
+#      file: classpath:db/changelog/generated/generated.xml
+  - include:
+      file: classpath:db/changelog/0000_initial_schema.xml
+  - include:
+      file: classpath:db/changelog/0001_create_table_car.xml
+  - include:
+      file: classpath:db/changelog/0002_create_table_wheel.xml
+  - include:
+      file: classpath:db/changelog/0003_create_table_street.xml
+  - include:
+     file: classpath:db/changelog/0004_create_table_city.xml

@@ -1,3 +1,5 @@
+## this project provides examples of liquibase alredy configured
+
 help : https://www.baeldung.com/liquibase-refactor-schema-of-java-app
 
 Spring boot : 3.0.2

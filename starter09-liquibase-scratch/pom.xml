@@ -51,6 +51,13 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+		<!-- H2 Database-->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -71,7 +78,7 @@
 		<dependency>
 			<groupId>org.liquibase</groupId>
 			<artifactId>liquibase-core</artifactId>
-			<version>4.26.0</version>
+			<version>4.27.0</version>
 		</dependency>
 
 	</dependencies>
@@ -85,7 +92,14 @@
 			<plugin>
 				<groupId>org.liquibase</groupId>
 				<artifactId>liquibase-maven-plugin</artifactId>
-				<version>4.26.0</version>
+				<version>4.27.0</version>
+<!--				<configuration>-->
+<!--					<driver>com.mysql.jdbc.Driver</driver>-->
+<!--					<url>jdbc:mysql://localhost:3306/db_demo</url>-->
+<!--					<username>root</username>-->
+<!--					<password>admin</password>-->
+<!--					<outputChangeLogFile>src/main/resources/db/generated/generated.xml</outputChangeLogFile>-->
+<!--				</configuration>-->
 			</plugin>
 		</plugins>
 	</build>
