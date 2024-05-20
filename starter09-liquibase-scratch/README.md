@@ -43,3 +43,10 @@ spring.datasource.continue-on-error=true
 ## PASSWORD/User : root admin
 
 ## driver : mysql-connector-java : 8.0.29
+
+################################## docker compose ##################
+add file [docker-compose.yaml](docker-compose.yaml)
+docker-compose up
+check elastik search : http://localhost:9200/
+check kibana : http://localhost:5601/app/home#/
+
