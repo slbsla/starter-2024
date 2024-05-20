@@ -20,6 +20,7 @@ starter16-batch-scheduling          | DEV FINISHD			| 02 Days			|16/03/2024			|
 starter17-batch-testing             | NOT STARTED			| 00 Days			|00/00/0000			|
 starter18-mocking-all               | NOT STARTED			| 00 Days			|00/00/0000			|
 starter19-openapi                   | DEV FINISHD			| 02 Days			|09/03/2024			|
+starter20-aop-logging				| DEV PROGRES			| 00 Days			|00/00/0000			|	
 =========================================================================================================================================
 NOT STARTED 
 DEV PROGRES

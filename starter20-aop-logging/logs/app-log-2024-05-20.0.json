@@ -1,0 +1,114 @@
+{
+  "@timestamp": "2024-05-19T23:42:04.731Z",
+  "log.level": "INFO",
+  "message": "Initializing Spring DispatcherServlet 'dispatcherServlet'",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.731Z",
+  "log.level": "INFO",
+  "message": "Initializing Servlet 'dispatcherServlet'",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "org.springframework.web.servlet.DispatcherServlet",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.732Z",
+  "log.level": "INFO",
+  "message": "Completed initialization in 1 ms",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "org.springframework.web.servlet.DispatcherServlet",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.752Z",
+  "log.level": "INFO",
+  "message": "INFO : call to ContactController - findAll",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "com.example.demo.controller.ContactController",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.755Z",
+  "log.level": "INFO",
+  "message": "[INFO] call to ContactServiceImpl - findAll xxxx01",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "com.example.demo.controller.ContactController",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.756Z",
+  "log.level": "INFO",
+  "message": "[INFO] call to ContactServiceImpl - findAll xxxx02",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "com.example.demo.controller.ContactController",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.756Z",
+  "log.level": "INFO",
+  "message": "[INFO] call to ContactServiceImpl - findAll xxxx03",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "com.example.demo.controller.ContactController",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.756Z",
+  "log.level": "INFO",
+  "message": "[INFO] call to ContactServiceImpl - findAll xxxx04",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "com.example.demo.controller.ContactController",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.756Z",
+  "log.level": "INFO",
+  "message": "[INFO] call to ContactServiceImpl - findAll xxxx05",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "com.example.demo.controller.ContactController",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.756Z",
+  "log.level": "INFO",
+  "message": "[INFO] call to ContactServiceImpl - findAll xxxx06",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "com.example.demo.controller.ContactController",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{
+  "@timestamp": "2024-05-19T23:42:04.756Z",
+  "log.level": "INFO",
+  "message": "[INFO] call to ContactServiceImpl - findAll xxxx07",
+  "ecs.version": "1.2.0",
+  "process.thread.name": "http-nio-8080-exec-1",
+  "log.logger": "com.example.demo.controller.ContactController",
+  "environment": "local",
+  "service": "my-logger-app"
+}
+{"@timestamp":"2024-05-19T23:47:06.767Z","log.level": "INFO","message":"Closing JPA EntityManagerFactory for persistence unit 'default'","ecs.version": "1.2.0","process.thread.name":"SpringApplicationShutdownHook","log.logger":"org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean","environment":"local","service":"my-logger-app"}
+{"@timestamp":"2024-05-19T23:47:06.768Z","log.level": "INFO","message":"HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'","ecs.version": "1.2.0","process.thread.name":"SpringApplicationShutdownHook","log.logger":"org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl","environment":"local","service":"my-logger-app"}
+{"@timestamp":"2024-05-19T23:47:06.772Z","log.level": "INFO","message":"HikariPool-1 - Shutdown initiated...","ecs.version": "1.2.0","process.thread.name":"SpringApplicationShutdownHook","log.logger":"com.zaxxer.hikari.HikariDataSource","environment":"local","service":"my-logger-app"}
+{"@timestamp":"2024-05-19T23:47:06.774Z","log.level": "INFO","message":"HikariPool-1 - Shutdown completed.","ecs.version": "1.2.0","process.thread.name":"SpringApplicationShutdownHook","log.logger":"com.zaxxer.hikari.HikariDataSource","environment":"local","service":"my-logger-app"}
