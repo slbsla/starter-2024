@@ -4,8 +4,8 @@ Starter				                 Status				 Duration			End Data
 starter01-crud-spring               | DEV FINISHD			| 01 Days			|09/03/2024			| 
 starter02-complex-hibernate         | DEV PROGRES			| 03 Days			|00/00/0000			|
 starter03-spring-paginations        | NOT STARTED			| 00 Days			|00/00/0000			|
-starter04-cache-hazelcast           | NOT STARTED			| 00 Days			|00/00/0000			|
-starter05-hazelcast-cache           | NOT STARTED			| 00 Days			|00/00/0000			|
+starter04-cache-hazelcast           | DEV FINISHD			| 00 Days			|00/00/0000			|
+starter05-custom-logback	    | DEV PROGRES			| 00 Days			|00/00/0000
 starter06-security-basic            | NOT STARTED			| 00 Days			|00/00/0000			|
 starter07-security-jwt              | NOT STARTED			| 00 Days			|00/00/0000			|
 starter08-mq-broker                 | NOT STARTED			| 00 Days			|00/00/0000			|
@@ -20,7 +20,7 @@ starter16-batch-scheduling          | DEV FINISHD			| 02 Days			|16/03/2024			|
 starter17-batch-testing             | NOT STARTED			| 00 Days			|00/00/0000			|
 starter18-mocking-all               | NOT STARTED			| 00 Days			|00/00/0000			|
 starter19-openapi                   | DEV FINISHD			| 02 Days			|09/03/2024			|
-starter20-aop-logging				| DEV PROGRES			| 00 Days			|00/00/0000			|	
+starter20-aop-logging		    | DEV PROGRES			| 00 Days			|00/00/0000			|	
 =========================================================================================================================================
 NOT STARTED 
 DEV PROGRES
