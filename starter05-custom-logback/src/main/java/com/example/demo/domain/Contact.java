@@ -3,8 +3,6 @@ package com.example.demo.domain;
 
 import jakarta.persistence.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -17,8 +15,6 @@ import java.util.Date;
 @Entity
 @Table(name = "CONTACT")
 @Data
-@Builder
-@AllArgsConstructor
 public class Contact implements Serializable {
 
     @Id

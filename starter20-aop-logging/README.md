@@ -15,3 +15,8 @@ User and password : sa, null
 Saved Settings:	Generic H2 (Server)
 
 
+Help for AOP
+
+https://docs.spring.io/spring-framework/docs/4.3.15.RELEASE/spring-framework-reference/html/aop.html
+
+
