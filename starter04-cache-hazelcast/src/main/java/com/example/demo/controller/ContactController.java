@@ -7,7 +7,9 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -33,16 +35,28 @@ public class ContactController {
         return contactService.findAllCached(myToken);
     }
 
+    @Operation(description = "Retrieves all contacts. Cache2")
+    @ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Success"),
+            @ApiResponse(responseCode = "400", description = "Bad Request"),
+            @ApiResponse(responseCode = "401", description = "Unauthorized"),
+            @ApiResponse(responseCode = "403", description = "Forbidden"),
+            @ApiResponse(responseCode = "404", description = "Not Found"),
+            @ApiResponse(responseCode = "500", description = "Internal server error occurred")})
+    @GetMapping(value = "/contacts-cache-without-token")
+    public DTOCache findAllv3(HttpServletRequest request) throws InterruptedException {
+        return contactService.findAllCached(request.getRemoteHost());
+    }
+
+
     @Operation(description = "Finds a contact by {id}.")
     @ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Success"),
             @ApiResponse(responseCode = "400", description = "Bad Request"),
             @ApiResponse(responseCode = "404", description = "Not Found"),
             @ApiResponse(responseCode = "500", description = "Internal server error occurred")})
 
-    @Parameter(name = "Contact's {id}", required = true)
     @GetMapping(value = "/contact/{id}")
     public com.example.demo.domain.Contact findContact(@PathVariable("id") Long id) {
-        return contactService.find(id);
+        return contactService.findByIdUsingCache(id);
     }
 
     @Operation(description = "Adds a new contact. It is necessary to fill in the attributes as shown in the 'Example Value'.")

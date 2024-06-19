@@ -27,16 +27,10 @@ package com.example.demo.service;
 import com.example.demo.controller.DTOCache;
 import com.example.demo.domain.Contact;
 import com.example.demo.repository.ContactRepository;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.EnableCaching;
-import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -62,12 +56,18 @@ public class ContactServiceImpl implements ContactService {
     @Cacheable(cacheNames = "contactCache", key = "#myToken")
     @Override
     public DTOCache findAllCached(String myToken) throws InterruptedException {
-        return DTOCache.builder().contactList(contactRepository.findAll()).token(myToken).build();
+        DTOCache r = DTOCache.builder().contactList(findAll(myToken)).token(myToken).build();
+        return r;
     }
 
     @Override
     public Contact find(Long id) {
         return contactRepository.getOne(id);
+    }
+
+    @Override
+    public Contact findByIdUsingCache(Long id) {
+        return contactRepository.findCached(id);
     }
 
     @Override
