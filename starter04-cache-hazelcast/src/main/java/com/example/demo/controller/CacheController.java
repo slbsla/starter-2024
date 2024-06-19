@@ -30,6 +30,7 @@ public class CacheController {
     @GetMapping
     public ResponseEntity<HttpStatus> findAll() {
         cacheUtility.invalidateCache();
+        cacheUtility.invalidateCacheService();
         return ResponseEntity.ok(HttpStatus.ACCEPTED);
     }
 

@@ -14,10 +14,11 @@ public interface ContactService {
 
     Contact find(Long id);
 
+    Contact findByIdUsingCache(Long id);
+
     Contact save(Contact contact);
 
     Contact update(Long id, Contact contact);
 
     void delete(Long id);
-
 }

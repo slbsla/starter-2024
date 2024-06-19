@@ -11,4 +11,8 @@ public class CacheUtility {
     public void invalidateCache() {
         log.info("cache is been cleaned");
     }
+    @CacheEvict(value = "serviceCache", allEntries = true)
+    public void invalidateCacheService() {
+        log.info("cache is been cleaned");
+    }
 }
